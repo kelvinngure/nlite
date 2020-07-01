@@ -1,4 +1,4 @@
-// ASSESSMENT TEMPLATE
+/* // ASSESSMENT TEMPLATE
 
 const l  = [""] // list of all the letters in assessment 
 const w = [""] // list all the words in assessment
@@ -13,7 +13,7 @@ const A = { // Assessment Object
     story: s,
     questions: q
 }
-
+*/
 // ASSESSMENT 3
 
 const l3  = ["h", "u", "t", "x", "o", "m", "j", "b", "s", "l"]
@@ -141,3 +141,8 @@ const A10 = {
     story: s10,
     questions: q10
 }
+
+const assessments = [A3, A4, A5, A6, A7, A8, A9, A10]
+
+
+export default assessments
