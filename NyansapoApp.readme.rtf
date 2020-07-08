@@ -1,0 +1,18 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2512
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Choose.js\
+\
+When the user presses Assessment button, calls dispatchThenNav function, then gives parameter of  assessment number. Then dispatchThenNav dispatches pick and payload and calls startAssessment function that navigates user to HiPage.js.\
+\
+App.js\
+\
+Reducer method takes in action and then inside action object, there are two elements: type and payload. Checks type as either \'93pick\'94 or \'93close\'94 (close will reset assessment).  When the app starts, all assessments are null. When an assessment is chosen, the dispatch takes the payload and chooses the specific assessment in the assessment list. Payload is between 1-10, so when \'93pick\'94 is activated, the index gets subtracted by 1. ***Make sure you understand reducers and context functions.***\
+\
+Paragraph.js, Letter.js, Word.js, and Story.js\
+\
+These scripts will have an independent scoring script/function. This function will check what score you get depending on whether user gets the answer right or wrong. The score will then navigate the user to the different page. }
