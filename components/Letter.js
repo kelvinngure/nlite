@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Text, View, TouchableOpacity } from "react-native"
 
 
-const Paragraph = () => {
+const Letter = () => {
     const [score, setScore] = useState(0)
 
     const navigateNext = () => {
@@ -17,4 +17,4 @@ const Paragraph = () => {
     )
 }
 
-export default Paragraph
+export default Letter
