@@ -1,18 +1,41 @@
-import { StatusBar } from 'expo-status-bar';
 import 'react-native-gesture-handler';
-import React, {useState} from 'react';
+import React, { useReducer} from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import Start from "./components/Start"
+import assessments from "./constants/Assessments"
+import TestContext from "./TestContext"
+
+const initialState = {
+  assessment: null,
+}
+
+function reducer (state, action){
+  switch(action.type){
+    case "pick":
+      const data = action.payload // data of the assessment number
+      return {
+        ...state,
+        assessment: {...assessments[data-1]}
+      }
+    case "close":
+      return {
+        ...state,
+        assessment: null
+      }
+  }
+} 
 
 
 export default function App() {
   
-  const [assessment, setAssessment] = useState("")
-
+  const [state, dispatch] = useReducer(reducer, initialState)
+  
   return (
     <NavigationContainer>
-      <Start/>
+      <TestContext.Provider value = {{state, dispatch}}>
+        <Start/>
+      </TestContext.Provider>
     </NavigationContainer>
     
   );

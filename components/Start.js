@@ -7,8 +7,6 @@ import styles from "../styles"
 const Stack = createStackNavigator();
 
 const Start = () => {
-
-
   return (
     <View style = {styles.fullview}>
         <Stack.Navigator>
