@@ -4,6 +4,8 @@ import {View} from "react-native"
 import Choose from "./Choose"
 import HiPage from "./HiPage"
 import Paragraph from "./Paragraph"
+import Letter from "./Letter"
+import Word from "./Word"
 import styles from "../styles"
 
 const Stack = createStackNavigator();
@@ -15,6 +17,8 @@ const Start = () => {
             <Stack.Screen name="Choose" component={Choose} />
             <Stack.Screen name= "HiPage" component = {HiPage}/>
             <Stack.Screen name= "Paragraph" component = {Paragraph}/>
+            <Stack.Screen name= "Letter" component = {Letter}/>
+            <Stack.Screen name= "Word" component = {Word}/>
         </Stack.Navigator>
     </View>
   );
