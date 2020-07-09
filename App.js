@@ -1,7 +1,7 @@
 import 'react-native-gesture-handler';
 import React, { useReducer} from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, SafeAreaView } from 'react-native';
 import Start from "./components/Start"
 import assessments from "./constants/Assessments"
 import TestContext from "./TestContext"

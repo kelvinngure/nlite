@@ -1,5 +1,6 @@
 import React from "react"
-import { Text, View, TouchableOpacity } from "react-native"
+import { Text, View, TouchableOpacity, Image } from "react-native"
+import styles from "../styles"
 
 
 const HiPage = ({navigation}) => {
@@ -9,9 +10,12 @@ const HiPage = ({navigation}) => {
     } 
 
     return(
-        <View>
-            <Text>Hi</Text>
-            <TouchableOpacity onPress = {() => navigateNext()}><Text>Start</Text></TouchableOpacity>
+        <View style = {styles.hiPage}>
+            <Text style = {styles.hiWord}>Hi!</Text>
+            <View style = {styles.imageContainer}>
+                <Image source = { require("../assets/lion.jpg") } />
+            </View>
+            <TouchableOpacity style = {styles.startButton} onPress = {() => navigateNext()}><Text style = {styles.startButtonWord}>Start</Text></TouchableOpacity>
         </View>
     )
 }
