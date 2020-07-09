@@ -41,6 +41,10 @@ export default StyleSheet.create({
     startButtonWord: {
         fontSize: 30,
     },
+    hiWord: {
+        marginTop: 30,
+        fontSize: 40
+    }
     hiPage: {
         alignItems: "center",
         flex: 1

@@ -11,7 +11,7 @@ const HiPage = ({navigation}) => {
 
     return(
         <View style = {styles.hiPage}>
-            <Text>Hi</Text>
+            <Text>Hi!</Text>
             <View style = {styles.imageContainer}>
                 <Image source = { require("../assets/lion.jpg") } />
             </View>
