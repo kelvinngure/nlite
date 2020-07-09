@@ -1,6 +1,6 @@
 import React from "react"
 import { StyleSheet, Dimensions } from "react-native"
-
+import Colors from "./constants/Colors"
 
 export default StyleSheet.create({
     fullview: { // pages template
@@ -16,36 +16,36 @@ export default StyleSheet.create({
         textAlign: "center",
         fontSize: 22
     },
-    choose_button: { // assessment button
+    chooseButton: { // assessment button
         flex: 1,
-        borderColor: "#000000",
+        borderColor: Colors.black,
         borderWidth: 1,
         borderRadius: 5,
-        backgroundColor: "#C6FBFF",
+        backgroundColor: Colors.appBlue,
         marginBottom: 10,
         justifyContent: "flex-end",
         height: "10%",
         alignItems: "center"
     },
-    startButton: {
+    startButton: { //"Start" button
         height: 50,
         width: "40%",
-        borderColor: "#000000",
+        borderColor: Colors.black,
         borderWidth: 1,
         borderRadius: 5,
         marginTop: 100,
-        backgroundColor: "#C6FBFF",
+        backgroundColor: Colors.appBlue,
         alignItems: "center",
         justifyContent: "center"
     },
-    startButtonWord: {
+    startButtonWord: { //Styling for "Start" on button
         fontSize: 30,
     },
-    hiWord: {
+    hiWord: { //Hi! at beginning of assessment
         marginTop: 30,
         fontSize: 40
-    }
-    hiPage: {
+    },
+    hiPage: { //
         alignItems: "center",
         flex: 1
     },
@@ -58,6 +58,8 @@ export default StyleSheet.create({
         justifyContent: "center"
     },
     box: {
+        marginTop: 20,
+        marginBottom: 30,
         borderColor: "#000000",
         borderWidth: 1,
         borderRadius: 5,
@@ -70,5 +72,9 @@ export default StyleSheet.create({
         fontSize: 12,
         alignItems: "center",
         color: "#000000"
+    },
+    paragraphChoose: {
+        flex:1,
+        paddingHorizontal: 16
     }
 })
