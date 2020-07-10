@@ -6,10 +6,9 @@ import TestContext from "../TestContext"
 
 const Choice = (props) => {
     return(
-        <View style = {styles.paragraphChoose}>
-            <TouchableOpacity style = {styles.box} onPress = {() => navigateNext(props.p1)}><Text>{props.p1}</Text></TouchableOpacity> 
-            <TouchableOpacity style = {styles.box} onPress = {() => navigateNext(props.p2)}><Text>{props.p2}</Text></TouchableOpacity>
-
+        <View style = {styles.paragraphChooseView}>
+            <TouchableOpacity style = {styles.paragraphChooseBox} onPress = {() => Paragraph.navigateNext()}><Text style = {styles.paragraphChooseWords}>{props.p1}</Text></TouchableOpacity> 
+            <TouchableOpacity style = {styles.paragraphChooseBox}><Text style = {styles.paragraphChooseWords}>{props.p2}</Text></TouchableOpacity>
         </View> 
     )
 }
@@ -18,10 +17,9 @@ const Paragraph = () => {
     const [score, setScore] = useState(0)
 
     const navigateNext = (paragraph) => {
-        navigation.navigate("ParagraphRead", {paragraph : paragraph})
+        navigation.navigate("ParagraphRead", {paragraph: paragraph})
     } 
 
-  
     return( 
             <TestContext.Consumer>
                 { //(state.state.assessment.paragraphs)
