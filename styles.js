@@ -78,7 +78,7 @@ export default StyleSheet.create({
         paddingHorizontal: 16,
         
     },
-    paragraphChosen: {
+    /*paragraphChosen: {
         flex:1,
         paddingHorizontal: 16,
         borderWidth: 1,
@@ -88,7 +88,7 @@ export default StyleSheet.create({
         flex: 1, 
         justifyContent: "center",
         alignItems: "center"
-    }
+    }*/
 
 
 
