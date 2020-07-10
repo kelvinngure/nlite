@@ -1,8 +1,18 @@
 import React, { useState } from "react"
 import { Text, View, TouchableOpacity } from "react-native"
+import styles from "../styles"
+import TestContext from "../TestContext"
 
+const Display = (prop) => {
+    return (
+        <View>
+            <TouchableOpacity style = {styles.leftLetterBox}><Text style = {styles.letterText}>{}</Text></TouchableOpacity>
+            <TouchableOpacity style = {styles.nextButton}><Text style = {styles.nextText}>Next</Text></TouchableOpacity>
+        </View>
+    )
+}
 
-const Letter = () => {
+const Letter = (props) => {
     const [score, setScore] = useState(0)
 
     const navigateNext = () => {
@@ -10,10 +20,9 @@ const Letter = () => {
     } 
 
     return(
-        <View>
-            <Text>Hi</Text>
-            <TouchableOpacity onPress = {() => navigateNext()}><Text>NEXT</Text></TouchableOpacity>
-        </View>
+        <TestContext.Consumer>
+            
+        </TestContext.Consumer>
     )
 }
 

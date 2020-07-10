@@ -6,9 +6,9 @@ import TestContext from "../TestContext"
 
 const Choice = (props) => {
     return(
-        <View style = {styles.paragraphChoose}>
-            <TouchableOpacity style = {styles.box}><Text>{props.p1}</Text></TouchableOpacity> 
-            <TouchableOpacity style = {styles.box}><Text>{props.p2}</Text></TouchableOpacity>
+        <View style = {styles.paragraphChooseView}>
+            <TouchableOpacity style = {styles.paragraphChooseBox}><Text style = {styles.paragraphChooseWords}>{props.p1}</Text></TouchableOpacity> 
+            <TouchableOpacity style = {styles.paragraphChooseBox}><Text style = {styles.paragraphChooseWords}>{props.p2}</Text></TouchableOpacity>
         </View> 
     )
 }

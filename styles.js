@@ -45,22 +45,25 @@ export default StyleSheet.create({
         marginTop: 30,
         fontSize: 40
     },
-    hiPage: { //
+    hiPage: { //HiPage View
         alignItems: "center",
         flex: 1
     },
-    imageContainer: {
-        //resizeMode: "center",
+    imageContainer: { //HiPage avatar
         marginTop: 100,
         height: 400,
         width: "100%",
         alignItems: "center",
         justifyContent: "center"
     },
-    box: {
+    paragraphChooseView: { //Paragraph Choose View
+        flex:1,
+        paddingHorizontal: 16
+    },
+    paragraphChooseBox: { //Paragraph choose button
         marginTop: 20,
         marginBottom: 30,
-        borderColor: "#000000",
+        borderColor: Colors.black,
         borderWidth: 1,
         borderRadius: 5,
         width: "100%",
@@ -68,13 +71,27 @@ export default StyleSheet.create({
         flex: 1, 
         alignItems: "center"
     },
-    box_content: {
-        fontSize: 12,
-        alignItems: "center",
-        color: "#000000"
+    paragraphChooseWords: { //Words in paragraph choose box
+        fontSize: 45
     },
-    paragraphChoose: {
-        flex:1,
-        paddingHorizontal: 16
+    leftLetterBox: { //Styling for letter boxes on left hand side
+
+    },
+    rightLetterBox: { //Styling for letter boxes on right hand side
+
+    },
+    letterText: { //Text inside letter boxes
+        
+    },
+    nextButton: {
+        borderRadius: 5,
+        borderWidth: 1,
+        borderColor: Colors.black,
+        backgroundColor: Colors.appGray
+    },
+    nextText: {
+        textAlign: "center",
+        fontSize: 22,
+        fontWeight: "bold"
     }
 })
