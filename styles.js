@@ -75,19 +75,31 @@ export default StyleSheet.create({
         fontSize: 45
     },
     leftLetterBox: { //Styling for letter boxes on left hand side
-
+        marginLeft: 50,
+        borderRadius: 10,
+        borderWidth: 1,
+        borderColor: Colors.black,
+        alignItems: "center",
+        marginBottom: 20
     },
     rightLetterBox: { //Styling for letter boxes on right hand side
-
+        marginRight: 50,
+        borderRadius: 10,
+        borderWidth: 1,
+        borderColor: Colors.black,
+        alignItems: "center",
+        marginBottom: 20
     },
     letterText: { //Text inside letter boxes
-        
+        fontSize: 22,
+        textAlign: "center"
     },
     nextButton: {
         borderRadius: 5,
         borderWidth: 1,
         borderColor: Colors.black,
-        backgroundColor: Colors.appGray
+        backgroundColor: Colors.appGray,
+        marginBottom: 30
     },
     nextText: {
         textAlign: "center",
